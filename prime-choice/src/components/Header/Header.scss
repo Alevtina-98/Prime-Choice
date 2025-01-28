@@ -1,0 +1,32 @@
+$header-color: #b5b4bf;
+$main-color: #0d0d0b;
+$font-size: 36px;
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@mixin font-Abhaya-Libre {
+  font-family: "Great Vibes", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.header {
+  @include flex;
+  grid-area: header;
+  background: $header-color;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: $main-color;
+    @include font-Abhaya-Libre;
+    font-size: $font-size;
+  }
+  img {
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,46 @@
+$header-color: #b5b4bf;
+$main-color: #0d0d0b;
+$font-size-footer: 18px;
+// $color-a: #f2f2e9;
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+// @mixin font-Abhaya-Libre {
+//   font-family: "Great Vibes", serif;
+//   font-weight: 900;
+//   font-style: normal;
+// }
+@mixin font-Prata {
+  font-family: "Prata", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.footer {
+  grid-area: footer;
+  background: $header-color;
+  text-align: center;
+  width: 100vw;
+  min-height: 170px;
+  color: $main-color;
+  @include flex;
+  font-size: $font-size-footer;
+  @include font-Prata;
+  ul {
+    list-style: none;
+  }
+  li {
+    text-align: left;
+  }
+  li a {
+    text-decoration: none;
+    // color: $color-a;
+    cursor: pointer;
+    color: $main-color;
+  }
+  li a:hover {
+    color: #a61b0f;
+  }
+}

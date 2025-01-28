@@ -1,0 +1,23 @@
+$sidebar-color: white;
+$main-color: #0000;
+$font-size-footer: 28px;
+@mixin font-Abhaya-Libre {
+  font-family: "Great Vibes", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: $sidebar-color;
+  @include font-Abhaya-Libre();
+  font-size: $font-size-footer;
+  text-align: left;
+
+  li {
+    cursor: pointer;
+  }
+  li:hover {
+    color: #a61b0f;
+  }
+}
